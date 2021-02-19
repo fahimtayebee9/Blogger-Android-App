@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:postImage="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgViewPager"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_1"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/title_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoslab_variablefont_wght"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/descriptionViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoslab_variablefont_wght"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardBackgroundColor="#ffb62e"
+            android:id="@+id/header_box">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_avator"
+                    android:id="@+id/user_profile_image"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/notoserif_bolditalic"
+                        android:id="@+id/user_name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User Email"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/notoserif_bolditalic"
+                        android:id="@+id/user_email"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:translationZ="1dp">
+
+            <!--   CARD 1 FOR TOTAL Posts         -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#fece2f"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:src="@drawable/social_media"
+                        android:paddingBottom="5dp"/>
+
+                    <TextView
+                        android:fontFamily="@font/notoserif_bold"
+                        android:id="@+id/post_count"
+                        android:includeFontPadding="false"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="212"
+                        android:textSize="24sp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/title_txt"
+                        android:includeFontPadding="false"
+                        android:layout_below="@id/post_count"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Total Posts"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--   CARD 2 FOR TOTAL LIKES         -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#fece2f"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:paddingBottom="5dp"
+                        android:src="@drawable/like" />
+
+                    <TextView
+                        android:fontFamily="@font/notoserif_bold"
+                        android:id="@+id/payment_label"
+                        android:includeFontPadding="false"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="123"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/payment_desc"
+                        android:includeFontPadding="false"
+                        android:layout_below="@id/payment_label"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Balance"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/user_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2e2d2c"
+                        android:fontFamily="@font/notoserif_bold"
+                        android:drawableLeft="@drawable/telephone"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/user_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2e2d2c"
+                        android:fontFamily="@font/notoserif_bold"
+                        android:drawableLeft="@drawable/home_loc"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/user_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2e2d2c"
+                        android:fontFamily="@font/notoserif_bold"
+                        android:drawableLeft="@drawable/status_bar"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/user_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Role"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2e2d2c"
+                        android:fontFamily="@font/notoserif_bold"
+                        android:drawableLeft="@drawable/role"
+                        android:drawablePadding="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Go To Home"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoslab_variablefont_wght"
+                        android:textFontWeight="800"
+                        android:background="#fece2f"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/btn_home"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Update Profile"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoslab_variablefont_wght"
+                        android:textFontWeight="800"
+                        android:background="#fece2f"
+                        android:padding="10dp"
+                        android:id="@+id/btn_update"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
